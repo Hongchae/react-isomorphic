@@ -1,0 +1,22 @@
+{
+  "name": "react-isomarphic",
+  "repository": "https://github.com/Hongchae/react-isomorphic",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "./node_modules/.bin/jsx js/components/ target/js/components/ && ./node_modules/.bin/watchify -o target/js/bundle.js -v -d js/main.js & DEBUG=react-isomorphic node ./app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.1",
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3",
+    "ejs": "^2.3.3",
+    "reactify": "^1.1.0",
+    "watchify": "^3.1.0",
+    "debug": "^2.2.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
